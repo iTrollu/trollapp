@@ -48,7 +48,10 @@
         elem.src = response.data.url;
 });
      console.log('Successful login for: ' + response.name);
+     var words = ["Web Developer", "Poet", "Writer", "Gamer", "App Developer", "Sportsman"];
+     var word = words[Math.floor(Math.random() * words.length)];
+     console.log(word);
      document.getElementById('status').innerHTML =
-       "Congrats " + response.name + " You're a IT Proffesional!";
-   });
+       "Congrats " + response.name + " You're a " + word;
+     });
  }
