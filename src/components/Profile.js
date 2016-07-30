@@ -11,11 +11,13 @@ class Profile extends Component {
         return word;
     };
     render() {
-        const {name, url} = this.props;
+        const {name, url,total_count} = this.props;
         return (
             <div className="profile-header">
+                <h2 className="profile-name">Know your story, after you reborn</h2>
+                <br />
                 <img src={url} alt="" className="profile-img"/>
-                <h2 className="profile-name">This is {name}, he is a {this.guessRender()}</h2>
+                <h2 className="profile-name">This is {name}, he will be a {this.guessRender()} with  {total_count * 100000} followers</h2>
             </div>
         );
     }

@@ -82,6 +82,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "jquery": "^3.1.0",
     "jss": "^4.0.2",
     "jss-camel-case": "^1.1.0",
     "lodash.isequal": "^4.0.0",
